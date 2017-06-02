@@ -1,0 +1,57 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Home/css/mui.css" rel="stylesheet" />
+		<link href="/Public/Home/css/mine.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="/Public/Home/fonts/iconfont.css" />
+	</head>
+	<body style="background-color: #FFFFFF;">
+		<script src="/Public/Home/js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		
+	<div class="widthauto bgwheader conp">
+			<div class="width_ns con_justify names">
+				<div class="green names" onclick="window.history.go(-1);">
+					<span  class="mui-icon mui-icon-back"></span>
+					<span>返回</span>
+				</div>
+				<div class="textcenter black">
+					<span>登录</span>
+				</div>
+				<div></div>
+			</div>
+		</div>	
+		<form action="<?php echo U('User/login_message');?>" method="post">
+			<div class="widthauto bgwhite textcenter phpad">
+				<div class="zihao16" class="textcenter">手机号登陆</div>
+			</div>
+			<div class="widthauto bgwhite">
+				<div class="width_nz con_justify boderbuttom padt">
+					<span>手机号码归属地</span>
+					<span>中国大陆<i class="mui-icon mui-icon-arrowright gray"></i></span>
+				</div>
+				<div class="width_nz con_justify padt boderbuttom" >
+					<span>+86</span>
+					<input type="number" name="tel" placeholder="请输入您的手机号" class="bodernone">
+				</div>
+			</div>
+			
+			<div class="width_nz mymap2">
+				<button type="submit" class="widthauto padt12   white mui-btn-success mui-btn-outlined">获取验证码 </button>
+			</div>
+			<div class="width_nz mymap2">
+				<img src="/Public/Home/img/weixinlogin.png"  width="100%" class="imgauto"/ >
+			</div>
+			<div class="mymap1">
+				<img src="/Public/Home/img/weixin.png" width="80px"height="80px" class="imgauto"/>
+			</div>
+		</form>
+	</body>
+
+</html>
